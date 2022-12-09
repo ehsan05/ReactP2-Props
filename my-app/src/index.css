@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.heading{
+  margin: 3rem auto;
+  color: #000;
+  text-align: center;
+}
+.Cards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Cards .Card{
+  position: relative;
+  margin-top: 4rem;
+  /* z-index: 1000; */
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  background-color: aquamarine;
+}
+.Cards .Card .top{
+  background-color: aqua;
+  padding: 1rem 2rem;
+}
+.Card img{
+  /* z-index: 1001; */
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  line-height: 7rem;
+  border: .5rem solid #fff;  
+  object-fit: cover;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+.Card .bottom{
+  padding: 1rem 1rem;
+}
