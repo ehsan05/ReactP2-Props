@@ -1,4 +1,6 @@
 import React from 'react';
+import Avatar from './Avatar';
+import Info  from './Info';
 // import Img from './Images/img_1.jpg';
 function Card(props){    
     return(
@@ -6,11 +8,17 @@ function Card(props){
           <div className='Card'>
             <div className='top'>
                <h2>{props.name}</h2>
-               <img src={props.img}alt='Wait!'/>
+               <h2>{props.key}</h2>
+               <Avatar 
+               img ={props.img}
+               />
             </div>
             <div className='bottom'>
-              <p>{props.mail}</p>
-              <p>{props.num}</p>
+              <Info 
+                mail = {props.mail}
+                num = {props.num}
+              />
+              
             </div>
           </div>
         </div>
